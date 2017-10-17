@@ -1,4 +1,4 @@
-##Devops Installing Xbuntu and using it
+## Devops Installing Xbuntu and using it
 
 This readme for for mac users only, do not touch if otherwise.
 
@@ -17,6 +17,16 @@ Download virtual box from
 Click on the OS X hosts to download
 
 <hr/>
+ 
+## Clone it
+
+clone it onto your computer in the folder you want
+
+go into the file you downloaded and run 
+
+	vagrant up
+  
+## Do it yourself 
  
 Once downloaded run the files and follow instructions for them to install them both
 
