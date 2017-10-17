@@ -107,3 +107,6 @@ Once you are done and want to leave the box's terminal type
 to leave 
 
 
+never include the do it yourself on git hub as we dont want them to be able to do it themselves
+
+
