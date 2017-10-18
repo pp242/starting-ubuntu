@@ -20,7 +20,7 @@ Click on the OS X hosts to download
  
 ## Clone it
 
-clone it onto your computer in the folder you want
+Clone it onto your computer in the folder you want
 
 go into the folder you downloaded and run 
 
