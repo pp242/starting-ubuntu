@@ -27,4 +27,8 @@ Clone it onto your computer in the folder you want
 Go into the folder you downloaded and run 
 
 	vagrant up
+	vagrant ssh
+	cd app
+	node app.js
+	check site development.local:3000 
   
