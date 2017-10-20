@@ -29,7 +29,7 @@ sudo unlink /etc/nginx/sites-enabled/default
 
 sudo cp /home/ubuntu/enviroment/app/reverse-proxy.conf /etc/nginx/sites-available/reverse-proxy.conf
 sudo cp /home/ubuntu/starting-ubuntu/enviroment/app/reverse-proxy.conf /etc/nginx/sites-available/reverse-proxy.conf
-sudo ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.con
+sudo ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/reverse-proxy.conf
 sudo service nginx configtest
 sudo service nginx restart
 
