@@ -25,5 +25,5 @@ sudo npm install pm2 -g
 # sudo chown -R app:app /home/ubuntu/app 
 
 
-sudo nano /etc/nginx/sites-available/webproxy
+sudo unlink /etc/nginx/sites-enabled/default
 
