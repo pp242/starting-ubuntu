@@ -20,6 +20,10 @@ sudo apt-get install nodejs -y
 sudo npm install pm2 -g
 
 # adds a user called app with no password
-sudo adduser --disabled-password app --gecos "" app
+# sudo adduser --disabled-password app --gecos "" app
 # make  newuser:group foldertochangepermissonfpr
-sudo chown -R app:app /home/ubuntu/app 
+# sudo chown -R app:app /home/ubuntu/app 
+
+
+sudo nano /etc/nginx/sites-available/webproxy
+
