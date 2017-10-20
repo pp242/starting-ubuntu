@@ -32,3 +32,11 @@ Go into the folder you downloaded and run
 	node app.js
 	check site development.local:3000 
   
+
+
+
+ssh -i ~/.ssh/DevOps-test.pem ubuntu@35.176.103.117
+
+eval `ssh-agent`
+
+ssh-add ~/.ssh/Github

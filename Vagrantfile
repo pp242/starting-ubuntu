@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
 
   # sync the app folder to the guest
   config.vm.synced_folder "app", "/home/ubuntu/app"
-
+  config.vm.synced_folder "enviroment" , "/home/ubuntu/enviroment"
   # run the app provisionally script
   config.vm.provision "shell", path: "enviroment/app/provision.sh"
 
