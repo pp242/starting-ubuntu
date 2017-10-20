@@ -20,6 +20,6 @@ sudo apt-get install nodejs -y
 sudo npm install pm2 -g
 
 # adds a user called app with no password
-sudo adduser --disabled-password app --grecos "" app
+sudo adduser --disabled-password app --gecos "" app
 # make  newuser:group foldertochangepermissonfpr
 sudo chown -R app:app /home/ubuntu/app 
