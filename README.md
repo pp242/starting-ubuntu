@@ -40,3 +40,18 @@ ssh -i ~/.ssh/DevOps-test.pem ubuntu@35.176.103.117
 eval `ssh-agent`
 
 ssh-add ~/.ssh/Github
+
+
+
+
+
+
+
+
+
+
+export DB_HOST=mongodb://192.168.10.101/blog
+
+npm install in app
+
+node app.js

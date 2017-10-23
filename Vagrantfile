@@ -12,16 +12,29 @@ end
 Vagrant.configure("2") do |config|
 
   config.vm.box = "ubuntu/xenial64"
-  config.vm.network "private_network" , ip: "192.168.10.100"
-  config.hostsupdater.aliases = ["development.local"]
- 
+  
+  config.vm.define "app" do |app|
+	  app.vm.network "private_network" , ip: "192.168.10.100"
+	  app.hostsupdater.aliases = ["development.local"]
+	  # sync the app folder to the guest
+	  app.vm.synced_folder "app", "/home/ubuntu/app"
+	  app.vm.synced_folder "enviroment" , "/home/ubuntu/enviroment"
+	  # run the app provisionally script
+	  app.vm.provision "shell", path: "enviroment/app/provision.sh"
+  end
 
+  config.vm.define "db" do |db|
+    
+      db.vm.network "private_network" , ip: "192.168.10.101"
+	  db.hostsupdater.aliases = ["development.local"]
+	  # sync the app folder to the guest
+	  db.vm.synced_folder "app/seeds", "/home/ubuntu/seeds"
+	  db.vm.synced_folder "enviroment" , "/home/ubuntu/enviroment"
 
-  # sync the app folder to the guest
-  config.vm.synced_folder "app", "/home/ubuntu/app"
-  config.vm.synced_folder "enviroment" , "/home/ubuntu/enviroment"
-  # run the app provisionally script
-  config.vm.provision "shell", path: "enviroment/app/provision.sh"
+	  # run the app provisionally script
+	  db.vm.provision "shell", path: "enviroment/db/provision.sh"
+
+  end
 
 
 end
